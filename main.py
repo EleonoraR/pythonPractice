@@ -69,3 +69,63 @@ print(user1.update({'age': 55}))
 print(user1)
 #Section 3. Lesson 55. Dictionary Methods 2---------
 
+
+#Section 3. Lesson 56. Tuples---------
+my_tuple = (1,2,3,4,5,5,5)
+print(5 in my_tuple)
+user = {
+  (1,2): [1,2,3],
+  'greet':'hello',
+  'age': 20
+}
+print(user[(1,2)])
+
+#Section 3. Lesson 56. Tuples---------
+#Section 3. Lesson 57. Tuples 2---------
+new_tuple = my_tuple[1:2]
+print(my_tuple.count(5))
+print(my_tuple.index(5))
+print(len(my_tuple))
+
+x,y,z, *other = (1,2,3,4,5)
+print(other)
+
+#Section 3. Lesson 57. Tuples 2---------
+
+#Section 3. Lesson 58. Sets---------
+print('Section 3. Lesson 58. Sets')
+my_set = {1,2,3,4,5,5}
+my_set.add(100)
+my_set.add(2) #will not add it - it is not unique item
+print(my_set)
+new_set = my_set.copy()
+my_set.clear()
+print(my_set)
+print(list(new_set))
+
+my_list = [1,2,3,8,9]
+print(set(my_list))
+print(1 in my_list)
+print(len(my_list))
+
+#Section 3. Lesson 58. Sets---------
+
+#Section 3. Lesson 59. Sets 2---------
+first_set = {4,5}
+second_set = {4,5,6,7,8,9,10}
+
+print('Section 3. Lesson 59. Sets 2')
+print(first_set.difference(second_set))
+print(first_set.discard(5))
+print(first_set)
+print(first_set.difference_update(second_set))
+print(first_set)
+print(first_set.intersection(second_set)) # or print(first_set & second_set)
+print(first_set.isdisjoint(second_set))
+print(first_set.union(second_set))# or print(first_set| second_set)
+print(first_set.issubset(second_set))
+print(first_set.issuperset(second_set))
+print(second_set.issuperset(first_set))
+
+#Section 3. Lesson 59. Sets 2---------
+
