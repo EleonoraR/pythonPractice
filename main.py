@@ -129,3 +129,26 @@ print(second_set.issuperset(first_set))
 
 #Section 3. Lesson 59. Sets 2---------
 
+#----FREECODECAMP Dictionary and loop--------
+counts = {'chuck': 1, 'fred': 42, 'jan': 100}
+for key in counts:
+  print(key, counts[key])
+
+counts_new = {'chuck': 1, 'annie': 42, 'jan': 100}
+for key in counts_new:
+  if counts_new[key] > 10:
+    print(key, counts_new[key])
+
+
+user_input_dict = dict()
+line = input('Enter a line of text:')
+words = line.split()
+
+print('Words:',words)
+print('Counting...')
+
+for word in words: 
+  user_input_dict[word] = user_input_dict.get(word,0)+1
+print('Count', user_input_dict)  
+
+
