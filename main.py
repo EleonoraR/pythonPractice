@@ -141,6 +141,19 @@ print(purse['candy'])
 purse['candy'] = purse['candy'] + 2
 print(purse)
 #-----------------------------------
+#Dictionaries - a 'bag' of values each with its own label
+names_dict = dict()
+#name_dict['csev'] = 1
+#name_dict['cwen'] = 1
+#print(name_dict)
+names = ['csev','cwen','csev','zqian','cwen']
+for name in names:
+  if name not in names_dict:
+    names_dict[name] = 1
+  else:
+    names_dict[name] = names_dict[name] + 1
+print(names_dict)
+#--------------------------------------------------------
 counts = {'chuck': 1, 'fred': 42, 'jan': 100}
 for key in counts:
   print(key, counts[key])
