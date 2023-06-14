@@ -130,6 +130,17 @@ print(second_set.issuperset(first_set))
 #Section 3. Lesson 59. Sets 2---------
 
 #----FREECODECAMP Dictionary and loop--------
+purse = dict()
+purse['money'] = 12
+purse['candy'] = 3
+purse['tissue'] = 75
+
+print(purse)
+
+print(purse['candy'])
+purse['candy'] = purse['candy'] + 2
+print(purse)
+#-----------------------------------
 counts = {'chuck': 1, 'fred': 42, 'jan': 100}
 for key in counts:
   print(key, counts[key])
