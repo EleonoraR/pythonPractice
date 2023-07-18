@@ -31,3 +31,15 @@ print(capital)
 #pop method
 capital.pop("Germany")
 print(capital)
+
+
+
+purse = dict()
+purse['money'] = 12
+purse['candy'] = 3
+purse['tissue'] = 75
+purse['glasses'] = 1
+
+print(purse['candy'])
+purse['candy'] = purse['candy'] + 2
+print(purse)
